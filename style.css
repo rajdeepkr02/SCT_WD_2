@@ -1,0 +1,87 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #282c34;
+  margin: 0;
+}
+
+.stopwatch {
+  text-align: center;
+  background-color: #1f1f1f;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+  color: #61dafb;
+  max-width: 300px;
+  width: 100%;
+}
+
+#display {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+
+.controls {
+  margin-bottom: 20px;
+}
+
+button {
+  padding: 12px 24px;
+  font-size: 1em;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+button:hover {
+  background-color: #21a1f1;
+  transform: scale(1.05);
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+#laps {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+  max-height: 150px;
+  overflow-y: auto;
+}
+
+#laps li {
+  background-color: #333;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 5px;
+  color: #ffffff;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+#laps li:hover {
+  transform: translateX(5px);
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #61dafb;
+  border-radius: 10px;
+}
